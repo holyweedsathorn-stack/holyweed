@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">HOLYWEED Bangkok logo</title>
+  <g fill="#b89b5e">
+    <path d="M20 6c-3 4-3 9 0 13-3-1-6-4-6-9 0-3 2-4 6-4zm0 0c3 4 3 9 0 13 3-1 6-4 6-9 0-3-2-4-6-4z"/>
+    <path d="M20 19v15" stroke="#b89b5e" stroke-width="2"/>
+  </g>
+  <text x="38" y="26" font-family="Georgia, serif" font-size="20" letter-spacing="2" fill="#f7f6f3">HOLYWEED</text>
+</svg>
