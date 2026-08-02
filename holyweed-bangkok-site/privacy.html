@@ -4,15 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy | HOLYWEED Bangkok</title>
-<meta name="description" content="How HOLYWEED Bangkok handles information submitted through this website, including our contact form, Google Maps, and Google Fonts.">
+<meta name="description" content="How HOLYWEED Bangkok handles information submitted through this website, including analytics, our contact form, Google Maps, and Google Fonts.">
 <link rel="canonical" href="https://www.holyweedbkk.com/privacy.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Privacy Policy | HOLYWEED Bangkok">
-<meta property="og:description" content="How HOLYWEED Bangkok handles information submitted through this website, including our contact form, Google Maps, and Google Fonts.">
+<meta property="og:description" content="How HOLYWEED Bangkok handles information submitted through this website, including analytics, our contact form, Google Maps, and Google Fonts.">
 <meta property="og:image" content="https://www.holyweedbkk.com/images/og-cover.jpg">
 <meta property="og:url" content="https://www.holyweedbkk.com/privacy.html">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="icon" href="images/favicon-32.png" type="image/png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
@@ -37,6 +38,17 @@
   ]
 }
 </script>
+<!-- Google Analytics (GA4) -- replace G-XXXXXXXXXX with your real Measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+<!-- Vercel Web Analytics & Speed Insights (enable in Vercel dashboard -> Analytics tab) -->
+<script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -45,7 +57,7 @@
 <header class="site-header">
   <div class="nav-wrap">
     <a href="index.html" class="logo">
-      <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><path d="M20 6c-3 4-3 9 0 13-3-1-6-4-6-9 0-3 2-4 6-4zm0 0c3 4 3 9 0 13 3-1 6-4 6-9 0-3-2-4-6-4z" fill="#5fb44d"/><path d="M20 19v15" stroke="#5fb44d" stroke-width="2"/></svg>
+      <img src="images/logo-header.png" width="36" height="36" alt="HOLYWEED Bangkok logo" class="logo-mark">
       <span>HOLYWEED<span class="tagline">Bangkok · Medical Cannabis Clinic</span></span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰ Menu</button>
@@ -79,15 +91,17 @@
     <p>If you fill in the consultation request form on our <a href="contact.html">Contact page</a>, you may enter your name, phone number, email address, preferred clinic, and a message. At present, this form is a placeholder that has not yet been connected to a live backend — submitting it does not currently send your information anywhere. Until it is fully connected, the fastest way to reach us is directly by phone or LINE, both listed on our <a href="contact.html">Contact page</a>.</p>
 
     <h2>Cookies and tracking</h2>
-    <p>This website does not use cookies, analytics scripts, or advertising trackers of our own. We don't track your browsing activity across this site or elsewhere.</p>
+    <p>This website uses Google Analytics and Vercel Analytics to understand overall traffic — things like how many people visit, which pages are popular, and roughly where visitors are coming from. These tools may set cookies or use similar technology in your browser to measure visits. We use this only in aggregate, to understand how the site is used; we do not use it to identify individual visitors or link it to anything you submit through the contact form.</p>
 
     <h2>Third-party services embedded on this site</h2>
-    <p>Two external services are loaded when you visit certain pages:</p>
+    <p>The following external services are loaded when you visit this website:</p>
     <ul>
+      <li><strong>Google Analytics</strong> — measures site traffic and page views. Governed by Google's own privacy policy.</li>
+      <li><strong>Vercel Analytics &amp; Speed Insights</strong> — measures site traffic and page load performance on the hosting platform we use. Governed by Vercel's own privacy policy.</li>
       <li><strong>Google Maps</strong> — embedded on our <a href="locations.html">Locations page</a> to show our clinic addresses. Google may set its own cookies when the map loads, governed by Google's own privacy policy.</li>
       <li><strong>Google Fonts</strong> — used to load the typeface on every page. Your browser makes a request to Google's font servers to do this, governed by Google's own privacy policy.</li>
     </ul>
-    <p>We don't control what these third parties do with requests made to their servers — see Google's privacy policy for details on their practices.</p>
+    <p>We don't control what these third parties do with requests made to their servers — see each provider's own privacy policy for details on their practices.</p>
 
     <h2>In-clinic records</h2>
     <p>Separately from this website, when you visit either clinic in person for a consultation, we keep prescription records as required under Thai Ministry of Public Health regulations — currently a minimum of one year. This applies to your in-person visit, not to anything submitted through this website.</p>

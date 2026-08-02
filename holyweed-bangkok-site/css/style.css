@@ -118,6 +118,13 @@ header.site-header {
   color: var(--on-dark);
 }
 .logo svg { height: 30px; width: auto; }
+.logo-mark {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: contain;
+}
 .logo .tagline {
   display: block;
   font-family: var(--font-sans);

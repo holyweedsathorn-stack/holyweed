@@ -12,7 +12,8 @@
 <meta property="og:image" content="https://www.holyweedbkk.com/images/og-cover.jpg">
 <meta property="og:url" content="https://www.holyweedbkk.com/blog/tourist-guide-bangkok-cannabis.html">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="../images/logo.svg" type="image/svg+xml">
+<link rel="icon" href="../images/favicon-32.png" type="image/png">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
@@ -58,7 +59,7 @@
     "name": "HOLYWEED Bangkok",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://www.holyweedbkk.com/images/logo.svg"
+      "url": "https://www.holyweedbkk.com/images/logo-badge-512.png"
     }
   },
   "image": "https://www.holyweedbkk.com/images/og-cover.jpg",
@@ -68,6 +69,17 @@
   }
 }
 </script>
+<!-- Google Analytics (GA4) -- replace G-XXXXXXXXXX with your real Measurement ID -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+<!-- Vercel Web Analytics & Speed Insights (enable in Vercel dashboard -> Analytics tab) -->
+<script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -76,7 +88,7 @@
 <header class="site-header">
   <div class="nav-wrap">
     <a href="../index.html" class="logo">
-      <svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><path d="M20 6c-3 4-3 9 0 13-3-1-6-4-6-9 0-3 2-4 6-4zm0 0c3 4 3 9 0 13 3-1 6-4 6-9 0-3-2-4-6-4z" fill="#5fb44d"/><path d="M20 19v15" stroke="#5fb44d" stroke-width="2"/></svg>
+      <img src="../images/logo-header.png" width="36" height="36" alt="HOLYWEED Bangkok logo" class="logo-mark">
       <span>HOLYWEED<span class="tagline">Bangkok · Medical Cannabis Clinic</span></span>
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰ Menu</button>

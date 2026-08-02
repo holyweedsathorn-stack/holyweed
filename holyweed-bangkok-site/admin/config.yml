@@ -1,0 +1,42 @@
+backend:
+  name: github
+  repo: holyweedsathorn-stack/holyweed
+  branch: main
+  # If you are using www.holyweedbkk.com, leave this as is.
+  # If you have NOT connected that domain yet, change this to your
+  # vercel.app URL instead, e.g. https://holyweed-s57s.vercel.app
+  base_url: https://www.holyweedbkk.com
+  auth_endpoint: api/auth
+
+# ---------------------------------------------------------------------
+# IMPORTANT — read this before your first login:
+#
+# Open your GitHub repo (holyweedsathorn-stack/holyweed) in a browser.
+#
+# Case A: you see index.html sitting at the very top level of the repo.
+#   -> leave every path below exactly as it is.
+#
+# Case B: you see a folder called "holyweed-bangkok-site" and index.html
+#   is INSIDE that folder.
+#   -> add "holyweed-bangkok-site/" in front of every path below, e.g.
+#      media_folder: "holyweed-bangkok-site/images"
+#      file: "holyweed-bangkok-site/content/home.json"
+# ---------------------------------------------------------------------
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "home"
+    label: "Homepage Content"
+    files:
+      - file: "content/home.json"
+        label: "Hero Banner & Reviews Banner"
+        name: "home"
+        fields:
+          - { label: "Eyebrow text (small text above the headline)", name: "eyebrow", widget: "string" }
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Subheadline", name: "subheadline", widget: "text" }
+          - { label: "Hero Photo", name: "heroImage", widget: "image" }
+          - { label: "Reviews Number (e.g. 1,000+)", name: "reviewsNumber", widget: "string" }
+          - { label: "Reviews Banner Caption", name: "reviewsText", widget: "string" }
